@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="mainApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Jade / Angular / CoffeeScript Starter</title>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-route.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="styles/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body ng-controller="MainCtrl">
+    <header>
+      <h1>Howdy, {{name}}!</h1>
+      <h2>Welcome to the Jade / Angular / CoffeeScript Starter!</h2>
+    </header>
+    <section>
+      <label>What's your name, cowboy?</label>
+      <input ng-model="name">
+    </section>
+  </body>
+</html>

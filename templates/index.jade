@@ -1,0 +1,20 @@
+doctype html
+html(ng-app="mainApp")
+  head
+    meta(charset="utf-8")
+    title Jade / Angular / CoffeeScript Starter
+    script(src="lib/angular.min.js")
+    script(src="lib/angular-route.min.js")
+    script(src="scripts/app.js")
+    link(rel="stylesheet" href="lib/bootstrap.min.css")
+    link(rel="stylesheet" href="lib/bootstrap-theme.min.css")
+    link(rel="stylesheet" href="styles/app.css")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body(ng-controller="MainCtrl")
+    header
+      h1 Howdy, {{name}}!
+      h2 Welcome to the Jade / Angular / CoffeeScript Starter!
+    section
+      label What's your name, cowboy?
+      input(ng-model="name")
+    
